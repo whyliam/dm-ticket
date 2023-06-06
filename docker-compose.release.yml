@@ -14,7 +14,7 @@ networks:
 services:
   # https://github.com/ClassmateLin/dm-ticket
   dm-ticket:
-    image: classmatelin/dm-ticket:v0.1.5
+    image: classmatelin/dm-ticket:latest
     container_name: dm-ticket
     restart: always
     privileged: true
@@ -47,7 +47,7 @@ services:
     #   - "53:53/udp"
 
   token-server:
-    image: classmatelin/alitoken-server:latest
+    image: xdp1998/alitoken-server:latest
     restart: always
     container_name: token-server
     networks:
